@@ -376,30 +376,33 @@
 	}
 
 	.part--gpu {
-		top: 140px;
-		left: -270px;
-		width: 140px;
+		top: 206px;
+		left: -150px;
+		width: 136px;
 		height: 46px;
+		padding: 0 10px;
+		gap: 8px;
 	}
 
 	.part--ram {
-		top: -126px;
-		left: 194px;
-		height: 118px;
+		top: -116px;
+		left: 184px;
+		width: 38px;
+		height: 114px;
 	}
 
 	.part--ssd {
-		top: 130px;
-		right: -150px;
-		width: 80px;
-		height: 34px;
+		top: 96px;
+		right: -76px;
+		width: 78px;
+		height: 32px;
 	}
 
 	.part--cpu {
-		bottom: -76px;
-		left: 242px;
-		width: 58px;
-		height: 58px;
+		bottom: -58px;
+		left: 226px;
+		width: 56px;
+		height: 56px;
 	}
 
 	.floating-card {
@@ -826,6 +829,45 @@
 		height: 284px;
 	}
 
+	.part {
+		font-size: 11px;
+	}
+
+	.part--gpu {
+		top: 216px;
+		left: -124px;
+		width: 122px;
+		height: 42px;
+		padding: 0 8px;
+		gap: 7px;
+	}
+
+	.part--gpu span {
+		width: 18px;
+		height: 18px;
+	}
+
+	.part--ram {
+		top: -108px;
+		left: 176px;
+		width: 34px;
+		height: 104px;
+	}
+
+	.part--ssd {
+		top: 88px;
+		right: -62px;
+		width: 70px;
+		height: 30px;
+	}
+
+	.part--cpu {
+		bottom: -46px;
+		left: 210px;
+		width: 50px;
+		height: 50px;
+	}
+
 	.floating-card {
 		display: none;
 	}
@@ -899,6 +941,81 @@
 
 	.hero__visual {
 		min-height: 420px;
+	}
+
+	.video-card {
+		min-height: 404px;
+	}
+
+	.pc-scene {
+		height: 306px;
+	}
+
+	.case {
+		width: 204px;
+		height: 268px;
+	}
+
+	.case__line--one {
+		top: 102px;
+	}
+
+	.case__line--two {
+		top: 128px;
+		width: 96px;
+	}
+
+	.case__fan {
+		right: 28px;
+		width: 52px;
+		height: 52px;
+	}
+
+	.case__fan--one {
+		top: 178px;
+	}
+
+	.case__fan--two {
+		top: 236px;
+	}
+
+	.part {
+		font-size: 10.5px;
+	}
+
+	.part--gpu {
+		top: 198px;
+		left: -108px;
+		width: 114px;
+		height: 40px;
+		padding: 0 8px;
+		gap: 6px;
+	}
+
+	.part--gpu span {
+		width: 16px;
+		height: 16px;
+	}
+
+	.part--ram {
+		top: -98px;
+		left: 164px;
+		width: 32px;
+		height: 96px;
+	}
+
+	.part--ssd {
+		top: 84px;
+		right: -56px;
+		width: 64px;
+		height: 28px;
+	}
+
+	.part--cpu {
+		bottom: -40px;
+		left: 194px;
+		width: 46px;
+		height: 46px;
 	}
 
 	.footer__inner {
@@ -1053,11 +1170,38 @@
 	}
 
 	.part--gpu {
-		left: -182px;
+		top: 188px;
+		left: -94px;
+		width: 108px;
+		height: 38px;
+		padding: 0 8px;
+		gap: 6px;
+	}
+
+	.part--gpu span {
+		width: 15px;
+		height: 15px;
+	}
+
+	.part--ram {
+		top: -90px;
+		left: 154px;
+		width: 30px;
+		height: 90px;
+	}
+
+	.part--ssd {
+		top: 80px;
+		right: -48px;
+		width: 58px;
+		height: 26px;
 	}
 
 	.part--cpu {
-		bottom: -130px;
+		bottom: -34px;
+		left: 182px;
+		width: 42px;
+		height: 42px;
 	}
 
 	.hero__stat,
@@ -1165,6 +1309,90 @@
 
 	.hero__stat-text {
 		font-size: 11px;
+	}
+
+	.video-card {
+		min-height: 372px;
+		padding: 13px;
+	}
+
+	.pc-scene {
+		height: 280px;
+	}
+
+	.case {
+		width: 194px;
+		height: 256px;
+	}
+
+	.case__line {
+		right: 34px;
+		left: 34px;
+	}
+
+	.case__line--one {
+		top: 98px;
+	}
+
+	.case__line--two {
+		top: 122px;
+		width: 88px;
+	}
+
+	.case__fan {
+		right: 24px;
+		width: 48px;
+		height: 48px;
+	}
+
+	.case__fan--one {
+		top: 170px;
+	}
+
+	.case__fan--two {
+		top: 223px;
+	}
+
+	.part {
+		font-size: 10px;
+	}
+
+	.part--gpu {
+		top: 178px;
+		left: -82px;
+		width: 98px;
+		height: 36px;
+		padding: 0 7px;
+		gap: 5px;
+	}
+
+	.part--gpu span {
+		width: 14px;
+		height: 14px;
+	}
+
+	.part--ram {
+		top: -82px;
+		left: 144px;
+		width: 28px;
+		height: 84px;
+		border-radius: 12px;
+	}
+
+	.part--ssd {
+		top: 76px;
+		right: -42px;
+		width: 54px;
+		height: 24px;
+		border-radius: 11px;
+	}
+
+	.part--cpu {
+		bottom: -28px;
+		left: 170px;
+		width: 38px;
+		height: 38px;
+		border-radius: 14px;
 	}
 
 	.catalog-card__top,
@@ -1333,22 +1561,43 @@
 		top: 224px;
 	}
 
+	.part {
+		font-size: 9.5px;
+	}
+
 	.part--ram {
-		left: 100px;
+		top: -76px;
+		left: 136px;
+		width: 26px;
+		height: 76px;
 	}
 
 	.part--cpu {
-		left: 170px;
+		bottom: -24px;
+		left: 160px;
+		width: 34px;
+		height: 34px;
 	}
 
 	.part--ssd {
-		top: 60px;
-		right: -120px;
+		top: 72px;
+		right: -36px;
+		width: 48px;
+		height: 22px;
 	}
 
 	.part--gpu {
-		top: 200px;
-		left: -205px;
+		top: 170px;
+		left: -72px;
+		width: 90px;
+		height: 34px;
+		padding: 0 6px;
+		gap: 5px;
+	}
+
+	.part--gpu span {
+		width: 13px;
+		height: 13px;
 	}
 
 	.scroll-top {
@@ -1460,6 +1709,87 @@
 	.badge {
 		font-size: 9px;
 		padding: 7px 9px;
+	}
+
+	.video-card {
+		min-height: 344px;
+		padding: 12px;
+	}
+
+	.pc-scene {
+		height: 260px;
+	}
+
+	.case {
+		width: 178px;
+		height: 236px;
+	}
+
+	.case__line {
+		right: 30px;
+		left: 30px;
+	}
+
+	.case__line--one {
+		top: 90px;
+	}
+
+	.case__line--two {
+		top: 112px;
+		width: 80px;
+	}
+
+	.case__fan {
+		right: 22px;
+		width: 44px;
+		height: 44px;
+	}
+
+	.case__fan--one {
+		top: 156px;
+	}
+
+	.case__fan--two {
+		top: 205px;
+	}
+
+	.part {
+		font-size: 9px;
+	}
+
+	.part--gpu {
+		top: 158px;
+		left: -62px;
+		width: 84px;
+		height: 32px;
+		padding: 0 6px;
+		gap: 4px;
+	}
+
+	.part--gpu span {
+		width: 12px;
+		height: 12px;
+	}
+
+	.part--ram {
+		top: -70px;
+		left: 126px;
+		width: 24px;
+		height: 70px;
+	}
+
+	.part--ssd {
+		top: 66px;
+		right: -32px;
+		width: 44px;
+		height: 20px;
+	}
+
+	.part--cpu {
+		bottom: -20px;
+		left: 148px;
+		width: 32px;
+		height: 32px;
 	}
 
 	.hero__stats {
@@ -1579,33 +1909,115 @@
 		font-size: 9.5px;
 	}
 
+	.video-card {
+		min-height: 332px;
+		padding: 11px;
+	}
+
+	.pc-scene {
+		height: 250px;
+	}
+
+	.case {
+		width: 170px;
+		height: 224px;
+	}
+
+	.case__line {
+		right: 28px;
+		left: 28px;
+	}
+
+	.case__line--one {
+		top: 86px;
+	}
+
+	.case__line--two {
+		top: 106px;
+		width: 74px;
+	}
+
+	.case__fan {
+		right: 20px;
+		width: 42px;
+		height: 42px;
+	}
+
+	.case__fan--one {
+		top: 148px;
+	}
+
+	.case__fan--two {
+		top: 194px;
+	}
+
+	.part {
+		font-size: 8.5px;
+	}
+
+	.part--gpu {
+		top: 150px;
+		left: -54px;
+		width: 78px;
+		height: 30px;
+		padding: 0 5px;
+		gap: 4px;
+	}
+
+	.part--gpu span {
+		width: 11px;
+		height: 11px;
+	}
+
+	.part--ram {
+		top: -64px;
+		left: 118px;
+		width: 22px;
+		height: 64px;
+	}
+
+	.part--ssd {
+		top: 62px;
+		right: -28px;
+		width: 40px;
+		height: 18px;
+	}
+
+	.part--cpu {
+		bottom: -18px;
+		left: 138px;
+		width: 28px;
+		height: 28px;
+		border-radius: 12px;
+	}
+
 	.btn {
 		min-height: 48px;
 		padding: 0 18px;
 	}
 
 	.hero__visual {
-		min-height: 350px;
+		min-height: 332px;
 	}
 
 	.video-card {
-		min-height: 348px;
-		padding: 12px;
+		min-height: 332px;
+		padding: 11px;
 	}
 
 	.pc-scene {
-		height: 266px;
+		height: 250px;
 	}
 
 	.case {
-		width: 168px;
+		width: 170px;
 		height: 224px;
 	}
 
 	.case__fan {
-		right: 22px;
-		width: 44px;
-		height: 44px;
+		right: 20px;
+		width: 42px;
+		height: 42px;
 	}
 
 	.scroll-top {
@@ -1630,29 +2042,42 @@
 	}
 
 	.part {
-		font-size: 11px;
+		font-size: 9px;
 	}
 
 	.part--gpu {
-		width: 142px;
-		height: 46px;
+		top: 158px;
+		left: -62px;
+		width: 84px;
+		height: 32px;
+		padding: 0 6px;
+		gap: 4px;
+	}
+
+	.part--gpu span {
+		width: 12px;
+		height: 12px;
 	}
 
 	.part--ram {
-		left: 154px;
-		width: 38px;
-		height: 118px;
+		top: -70px;
+		left: 126px;
+		width: 24px;
+		height: 70px;
 	}
 
 	.part--ssd {
-		width: 82px;
-		height: 34px;
+		top: 66px;
+		right: -32px;
+		width: 44px;
+		height: 20px;
 	}
 
 	.part--cpu {
-		left: 184px;
-		width: 58px;
-		height: 58px;
+		bottom: -20px;
+		left: 148px;
+		width: 32px;
+		height: 32px;
 	}
 
 	.form__input,
