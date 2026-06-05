@@ -8,6 +8,19 @@
 		gap: 44px;
 	}
 
+	.hero__content {
+		max-width: 600px;
+	}
+
+	.hero h1 {
+		max-width: 400px;
+		font-size: clamp(42px, 4.5vw, 64px);
+	}
+
+	.hero__content .hero__text {
+		max-width: 520px;
+	}
+
 	.section {
 		padding: 76px 0;
 	}
@@ -44,12 +57,12 @@
 	}
 
 	.hero__content {
-		max-width: 580px;
+		max-width: 540px;
 	}
 
 	.hero h1 {
-		max-width: 11ch;
-		font-size: clamp(40px, 5.2vw, 62px);
+		max-width: 400px;
+		font-size: clamp(38px, 5vw, 58px);
 	}
 
 	h2 {
@@ -61,6 +74,15 @@
 	.config__panel p,
 	.contact p {
 		font-size: 17px;
+	}
+
+	.badge {
+		gap: 8px;
+		font-size: 13px;
+	}
+
+	.hero__content .hero__text {
+		max-width: 480px;
 	}
 
 	.hero__visual {
@@ -82,8 +104,8 @@
 	}
 
 	.part--gpu {
-		top: 226px;
-		left: -168px;
+		top: 170px;
+		left: -250px;
 		width: 150px;
 		height: 50px;
 		gap: 8px;
@@ -102,8 +124,8 @@
 	}
 
 	.part--ssd {
-		top: 114px;
-		right: -88px;
+		top: 50px;
+		right: -120px;
 		width: 88px;
 		height: 36px;
 	}
@@ -269,16 +291,27 @@
 	}
 
 	.hero__content {
-		max-width: 540px;
+		max-width: 500px;
 	}
 
 	.hero h1 {
-		font-size: clamp(38px, 4.6vw, 56px);
+		max-width: 400px;
+		font-size: clamp(34px, 4.5vw, 50px);
 	}
 
 	.hero__text {
 		font-size: 16px;
 		line-height: 1.55;
+	}
+
+	.badge {
+		gap: 8px;
+		padding: 9px 12px;
+		font-size: 12px;
+	}
+
+	.hero__content .hero__text {
+		max-width: 460px;
 	}
 
 	.hero__actions {
@@ -343,8 +376,8 @@
 	}
 
 	.part--gpu {
-		top: 206px;
-		left: -154px;
+		top: 140px;
+		left: -270px;
 		width: 140px;
 		height: 46px;
 	}
@@ -356,8 +389,8 @@
 	}
 
 	.part--ssd {
-		top: 102px;
-		right: -78px;
+		top: 130px;
+		right: -150px;
 		width: 80px;
 		height: 34px;
 	}
@@ -487,7 +520,7 @@
 	}
 
 	.hero {
-		padding: 48px 0 42px;
+		padding: 36px 0 34px;
 	}
 
 	.hero__grid,
@@ -509,11 +542,26 @@
 	}
 
 	.hero h1 {
-		max-width: 12ch;
+		max-width: 10ch;
+		font-size: clamp(42px, 6vw, 58px);
+	}
+
+	.hero__content .hero__text {
+		max-width: 34ch;
+	}
+
+	.hero__actions {
+		max-width: 520px;
+		margin: 18px 0 18px;
+	}
+
+	.hero__stats {
+		max-width: 560px;
 	}
 
 	.hero__visual {
-		min-height: 500px;
+		min-height: 460px;
+		width: 100%;
 	}
 
 	.video-card {
@@ -695,12 +743,39 @@
 	}
 
 	.hero h1 {
+		max-width: 10ch;
+		font-size: 46px;
+	}
+
+	.badge {
+		max-width: 100%;
+		font-size: 13px;
+	}
+
+	.hero__content .hero__text {
 		max-width: 100%;
 	}
 
+	.hero__actions {
+		gap: 12px;
+	}
+
 	.hero__stats {
-		grid-template-columns: 1fr;
-		max-width: none;
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+		max-width: 100%;
+		gap: 10px;
+	}
+
+	.hero__stat {
+		padding: 14px;
+	}
+
+	.hero__stat-value {
+		font-size: 22px;
+	}
+
+	.hero__stat-text {
+		font-size: 13px;
 	}
 
 	.features,
@@ -780,6 +855,50 @@
 	.config__panel p,
 	.contact p {
 		font-size: 17px;
+	}
+
+	.hero h1 {
+		max-width: 9.2ch;
+		font-size: 40px;
+	}
+
+	.hero__content .hero__text {
+		max-width: 100%;
+	}
+
+	.badge {
+		font-size: 12px;
+	}
+
+	.hero {
+		padding: 32px 0 30px;
+	}
+
+	.hero__actions {
+		gap: 12px;
+		margin: 16px 0 18px;
+	}
+
+	.hero__stats {
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+		gap: 8px;
+	}
+
+	.hero__stat {
+		padding: 12px;
+		border-radius: 18px;
+	}
+
+	.hero__stat-value {
+		font-size: 20px;
+	}
+
+	.hero__stat-text {
+		font-size: 12px;
+	}
+
+	.hero__visual {
+		min-height: 420px;
 	}
 
 	.footer__inner {
@@ -870,25 +989,67 @@
 	}
 
 	.hero {
-		padding-bottom: 34px;
+		padding: 28px 0 28px;
+	}
+
+	.hero h1 {
+		max-width: 9ch;
+		font-size: 36px;
+		margin-bottom: 16px;
+	}
+
+	.hero__text {
+		font-size: 15.5px;
+		line-height: 1.58;
+	}
+
+	.badge {
+		gap: 8px;
+		font-size: 11px;
+		padding: 9px 12px;
 	}
 
 	.hero__actions {
-		flex-direction: column;
+		display: grid;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
 		align-items: stretch;
+		gap: 12px;
+		margin: 16px 0 18px;
+	}
+
+	.hero__actions .btn {
+		width: 100%;
+	}
+
+	.hero__stats {
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+		gap: 8px;
+	}
+
+	.hero__stat {
+		padding: 12px;
+		border-radius: 18px;
+	}
+
+	.hero__stat-value {
+		font-size: 19px;
+	}
+
+	.hero__stat-text {
+		font-size: 11.5px;
 	}
 
 	.hero__visual {
-		min-height: 450px;
+		min-height: 392px;
 	}
 
 	.video-card {
-		min-height: 410px;
+		min-height: 388px;
 		padding: 14px;
 	}
 
 	.pc-scene {
-		height: 316px;
+		height: 294px;
 	}
 
 	.part--gpu {
@@ -968,6 +1129,44 @@
 		font-size: 12px;
 	}
 
+	.hero h1 {
+		max-width: 8.8ch;
+		font-size: 32px;
+	}
+
+	.hero__text {
+		font-size: 14.5px;
+		line-height: 1.58;
+	}
+
+	.badge {
+		gap: 7px;
+		padding: 8px 11px;
+		font-size: 10.5px;
+	}
+
+	.hero__actions {
+		grid-template-columns: 1fr;
+		gap: 10px;
+	}
+
+	.hero__stats {
+		gap: 7px;
+	}
+
+	.hero__stat {
+		padding: 11px;
+		border-radius: 16px;
+	}
+
+	.hero__stat-value {
+		font-size: 18px;
+	}
+
+	.hero__stat-text {
+		font-size: 11px;
+	}
+
 	.catalog-card__top,
 	.spec-card__head,
 	.spec-list div,
@@ -1044,12 +1243,45 @@
 		font-size: 16px;
 	}
 
+	.hero h1 {
+		max-width: 8.4ch;
+		font-size: 29px;
+	}
+
+	.hero__text {
+		font-size: 13.8px;
+		line-height: 1.54;
+	}
+
+	.badge {
+		gap: 7px;
+		padding: 8px 10px;
+		font-size: 10px;
+	}
+
+	.hero__stats {
+		gap: 6px;
+	}
+
+	.hero__stat {
+		padding: 10px;
+		border-radius: 15px;
+	}
+
+	.hero__stat-value {
+		font-size: 17px;
+	}
+
+	.hero__stat-text {
+		font-size: 10.5px;
+	}
+
 	.hero__visual {
-		min-height: 400px;
+		min-height: 360px;
 	}
 
 	.video-card {
-		min-height: 388px;
+		min-height: 360px;
 		border-radius: 22px;
 	}
 
@@ -1215,6 +1447,37 @@
 		font-size: 13px;
 	}
 
+	.hero h1 {
+		max-width: 8.2ch;
+		font-size: 27px;
+	}
+
+	.hero__text {
+		font-size: 13.2px;
+		line-height: 1.5;
+	}
+
+	.badge {
+		font-size: 9px;
+		padding: 7px 9px;
+	}
+
+	.hero__stats {
+		gap: 6px;
+	}
+
+	.hero__stat {
+		padding: 10px 9px;
+	}
+
+	.hero__stat-value {
+		font-size: 16px;
+	}
+
+	.hero__stat-text {
+		font-size: 10px;
+	}
+
 	.included-card,
 	.case-card,
 	.coverage-card,
@@ -1280,6 +1543,40 @@
 
 	.section {
 		padding: 48px 0;
+	}
+
+	.hero h1 {
+		max-width: 8.1ch;
+		font-size: 25px;
+		margin: 18px 0 16px;
+	}
+
+	.hero__text {
+		font-size: 12.8px;
+		line-height: 1.48;
+	}
+
+	.badge {
+		gap: 6px;
+		padding: 7px 9px;
+		font-size: 8.5px;
+	}
+
+	.hero__stats {
+		gap: 5px;
+	}
+
+	.hero__stat {
+		padding: 9px 8px;
+		border-radius: 14px;
+	}
+
+	.hero__stat-value {
+		font-size: 15px;
+	}
+
+	.hero__stat-text {
+		font-size: 9.5px;
 	}
 
 	.btn {
