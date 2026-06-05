@@ -6,6 +6,7 @@ import { initConfigurator } from './modules/configurator.js';
 import { initForm } from './modules/form.js';
 import { initScrollTop } from './modules/scrollTop.js';
 import { initFaq } from './modules/faq.js';
+import { initTelegramLinks } from './modules/telegramLink.js';
 
 initTheme();
 initMenu();
@@ -15,3 +16,4 @@ initConfigurator();
 initForm();
 initScrollTop();
 initFaq();
+initTelegramLinks();
