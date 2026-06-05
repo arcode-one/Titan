@@ -1,0 +1,48 @@
+:root {
+  --bg: #f4f7fb;
+  --bg-soft: #0d1730;
+  --card: rgba(255, 255, 255, 0.74);
+  --card-strong: rgba(255, 255, 255, 0.9);
+  --text: #10131a;
+  --muted: #5d6678;
+  --line: rgba(16, 19, 26, 0.12);
+  --accent: #63a6ff;
+  --accent-2: #245cff;
+  --green: #7be0ff;
+  --header-bg: rgba(248, 251, 255, .74);
+  --panel-bg: rgba(255,255,255,.68);
+  --badge-bg: rgba(255,255,255,.72);
+  --badge-text: #18345f;
+  --ghost-bg: rgba(255,255,255,.68);
+  --video-bg: linear-gradient(180deg, rgba(255,255,255,.88), rgba(255,255,255,.62));
+  --soft-shadow: rgba(31,53,97,.18);
+  --list-text: #1d2430;
+  --spec-row-bg: rgba(16,19,26,.045);
+  --input-bg: rgba(255,255,255,.72);
+  --control-bg: rgba(255,255,255,.86);
+  --menu-bg: rgba(255,255,255,.96);
+  --radius: 28px;
+  --container: 1240px;
+  --header-height: 78px;
+}
+
+body[data-theme="dark"] {
+  --bg: #060914;
+  --card: rgba(255, 255, 255, 0.08);
+  --card-strong: rgba(255, 255, 255, 0.12);
+  --text: #f7f9ff;
+  --muted: #afbdd7;
+  --line: rgba(255, 255, 255, 0.14);
+  --header-bg: rgba(6, 9, 20, .78);
+  --panel-bg: rgba(255,255,255,.06);
+  --badge-bg: rgba(255,255,255,.075);
+  --badge-text: #edf5ff;
+  --ghost-bg: rgba(255,255,255,.065);
+  --video-bg: linear-gradient(180deg, rgba(255,255,255,.12), rgba(255,255,255,.055));
+  --soft-shadow: rgba(0,8,30,.45);
+  --list-text: #eaf7ff;
+  --spec-row-bg: rgba(255,255,255,.06);
+  --input-bg: rgba(255,255,255,.07);
+  --control-bg: rgba(14, 19, 34, .94);
+  --menu-bg: rgba(14, 19, 34, .96);
+}

@@ -1,0 +1,992 @@
+<!doctype html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Titan — сборка ПК в Казани под заказ</title>
+		<link rel="icon" type="image/svg+xml" href="icons/favicon.svg" />
+		<link rel="stylesheet" href="css/index.css" />
+		<script type="module" src="js/index.js"></script>
+	</head>
+	<body class="is-loading" id="top">
+		<div class="welcome-screen" aria-live="polite">
+			<div class="welcome-card">
+				<span class="welcome-card__kicker">
+					<img
+						class="welcome-card__logo"
+						src="icons/favicon.svg"
+						alt=""
+						aria-hidden="true"
+					/>
+					Titan
+				</span>
+				<h2>Готовим вашу сборку</h2>
+				<p>Проверяем комплектующие, охлаждение и производительность.</p>
+				<div class="welcome-progress" aria-hidden="true">
+					<span></span>
+				</div>
+			</div>
+		</div>
+
+		<header class="header">
+			<div class="container header__inner">
+				<div class="logo">
+					<a class="logo__icon-link" href="#top" aria-label="Titan">
+						<img class="logo__mark" src="icons/favicon.svg" alt="" />
+					</a>
+					<span class="logo__text">Titan</span>
+				</div>
+
+				<nav class="nav" aria-label="Главное меню">
+					<ul class="nav__list">
+						<li class="nav__item">
+							<a class="nav__link" href="#builds">Сборки</a>
+						</li>
+						<li class="nav__item">
+							<a class="nav__link" href="#catalog">Каталог</a>
+						</li>
+						<li class="nav__item">
+							<a class="nav__link" href="#process">Процесс</a>
+						</li>
+						<li class="nav__item">
+							<a class="nav__link" href="#config">Конфигуратор</a>
+						</li>
+						<li class="nav__item">
+							<a class="nav__link" href="#contacts">Заявка</a>
+						</li>
+					</ul>
+				</nav>
+
+				<button
+					class="theme-toggle"
+					type="button"
+					aria-label="Переключить темную тему"
+					aria-pressed="false"
+				>
+					<svg
+						class="theme-toggle__svg"
+						viewBox="0 0 108 54"
+						aria-hidden="true"
+					>
+						<rect
+							class="theme-toggle__pill"
+							x="2"
+							y="2"
+							width="104"
+							height="50"
+							rx="25"
+						></rect>
+						<circle class="theme-toggle__disc" cx="78" cy="27" r="20"></circle>
+						<g class="theme-toggle__sun">
+							<circle cx="30" cy="27" r="6"></circle>
+							<path
+								d="M30 10v7M30 37v7M13 27h7M40 27h7M18 15l5 5M37 34l5 5M42 15l-5 5M23 34l-5 5"
+							></path>
+						</g>
+						<g class="theme-toggle__moon">
+							<path d="M78 13a14 14 0 1 0 13 20 12 12 0 1 1-13-20Z"></path>
+						</g>
+					</svg>
+				</button>
+
+				<a class="header__btn" href="#contacts">Собрать ПК</a>
+				<button
+					class="burger"
+					type="button"
+					aria-label="Открыть меню"
+					aria-expanded="false"
+				>
+					<span></span><span></span><span></span>
+				</button>
+			</div>
+		</header>
+
+		<main>
+			<section class="hero">
+				<div class="container hero__grid">
+					<div class="hero__content">
+						<div class="badge">
+							<span class="badge__dot"></span>
+							Сборка ПК в Казани под игры, работу и монтаж
+						</div>
+
+						<h1>
+							Подбираем и собираем ПК под ваши задачи, бюджет и дальнейший
+							апгрейд
+						</h1>
+						<p class="hero__text">
+							Помогаем собрать компьютер без случайных комплектующих и лишних
+							трат: подбираем конфигурацию, аккуратно собираем, настраиваем
+							систему и проверяем её под нагрузкой перед выдачей.
+						</p>
+
+						<div class="hero__actions">
+							<a class="btn btn--primary" href="#config">Подобрать сборку</a>
+							<a class="btn btn--ghost" href="#process">Как мы собираем</a>
+						</div>
+
+						<ul class="hero__stats" aria-label="Преимущества">
+							<li class="hero__stat">
+								<strong class="hero__stat-value">2-4 дня</strong>
+								<span class="hero__stat-text">сборка и настройка</span>
+							</li>
+							<li class="hero__stat">
+								<strong class="hero__stat-value">3 часа</strong>
+								<span class="hero__stat-text">стресс-тест перед выдачей</span>
+							</li>
+							<li class="hero__stat">
+								<strong class="hero__stat-value">12 мес</strong>
+								<span class="hero__stat-text">поддержка и консультации</span>
+							</li>
+						</ul>
+					</div>
+
+					<div class="hero__visual" aria-hidden="true">
+						<div class="video-card">
+							<div class="video-card__top">
+								<span class="live-dot"></span>
+								<span>Концепт вашей сборки</span>
+							</div>
+
+							<div class="pc-scene">
+								<div class="case">
+									<div class="case__glass"></div>
+									<div class="case__line case__line--one"></div>
+									<div class="case__line case__line--two"></div>
+									<div class="case__fan case__fan--one"></div>
+									<div class="case__fan case__fan--two"></div>
+								</div>
+
+								<div class="part part--gpu">
+									<span></span>
+									Видеокарта
+								</div>
+								<div class="part part--ram">ОЗУ</div>
+								<div class="part part--ssd">SSD</div>
+								<div class="part part--cpu">ЦП</div>
+
+								<div class="speed-lines">
+									<span></span><span></span><span></span><span></span>
+								</div>
+							</div>
+
+							<div class="timeline">
+								<span></span>
+							</div>
+						</div>
+
+						<div class="floating-card floating-card--one">
+							<strong>до 144 FPS</strong>
+							<span>в популярных играх в Full HD</span>
+						</div>
+						<div class="floating-card floating-card--two">
+							<strong>56°C</strong>
+							<span>температура GPU под игровой нагрузкой</span>
+						</div>
+						<div class="floating-card floating-card--three">
+							<strong>34 дБ</strong>
+							<span>уровень шума в рабочем режиме</span>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section" id="builds">
+				<div class="container">
+					<header class="section-head">
+						<span class="eyebrow">Готовые направления</span>
+						<h2>Подбираем сборку под конкретный сценарий использования</h2>
+						<p>
+							Учитываем ваши задачи, монитор, бюджет, требования к шуму и запас
+							на апгрейд, а не просто собираем “что подороже”.
+						</p>
+					</header>
+
+					<div class="cards cards--builds">
+						<article class="build-card">
+							<div class="build-card__icon">🎮</div>
+							<h3>Игровой ПК</h3>
+							<p>
+								Для стабильного FPS, адекватных температур и комфортной игры без
+								переплаты за лишнюю мощность.
+							</p>
+							<ul>
+								<li>Full HD / 2K / 4K</li>
+								<li>RGB по желанию</li>
+								<li>Тесты в играх</li>
+							</ul>
+						</article>
+
+						<article class="build-card build-card--accent">
+							<div class="build-card__icon">⚡</div>
+							<h3>Рабочая станция</h3>
+							<p>
+								Для монтажа, 3D, графики, визуализации и тяжёлых рабочих задач,
+								где важны стабильность и быстрый отклик.
+							</p>
+							<ul>
+								<li>CPU с запасом</li>
+								<li>Быстрые SSD</li>
+								<li>Много RAM</li>
+							</ul>
+						</article>
+
+						<article class="build-card">
+							<div class="build-card__icon">🏢</div>
+							<h3>Дом и офис</h3>
+							<p>
+								Практичные и тихие системы для учёбы, работы из дома, офиса и
+								ежедневных задач без лишних трат.
+							</p>
+							<ul>
+								<li>Тихая работа</li>
+								<li>Оптимальный бюджет</li>
+								<li>Быстрая настройка</li>
+							</ul>
+						</article>
+					</div>
+				</div>
+			</section>
+
+			<section class="section catalog" id="catalog">
+				<div class="container">
+					<header class="section-head">
+						<span class="eyebrow">Каталог</span>
+						<h2>Базовые сборки, от которых удобно отталкиваться</h2>
+						<p>
+							Это не жёсткие пакеты, а понятные стартовые конфигурации. При
+							необходимости меняем корпус, охлаждение, видеокарту, память и
+							накопители под ваш запрос.
+						</p>
+					</header>
+
+					<div class="catalog-grid">
+						<article class="catalog-card">
+							<div
+								class="pc-preview pc-preview--a"
+								aria-label="Изображение игрового ПК"
+							>
+								<img
+									src="images/Forge-Start.webp"
+									alt="Компактный черный игровой ПК Titan Start с RGB-подсветкой"
+									loading="lazy"
+								/>
+							</div>
+							<div class="catalog-card__body">
+								<div class="catalog-card__top">
+									<h3>Titan Start</h3>
+									<span>от 99 000 ₽</span>
+								</div>
+								<p>
+									Для Full HD-гейминга, повседневной работы и комфортного
+									апгрейда в будущем.
+								</p>
+								<ul>
+									<li>Ryzen 5 7500F</li>
+									<li>RTX 4060, 32 GB DDR5</li>
+									<li>1 TB NVMe SSD</li>
+								</ul>
+								<div class="review">
+									<strong>4.8</strong>
+									<span
+										>“Собрали аккуратно, всё настроили и объяснили по
+										апгрейду.”</span
+									>
+								</div>
+								<a class="btn btn--ghost catalog-card__btn" href="#contacts"
+									>Уточнить конфигурацию</a
+								>
+							</div>
+						</article>
+
+						<article class="catalog-card catalog-card--featured">
+							<div
+								class="pc-preview pc-preview--b"
+								aria-label="Изображение мощного игрового ПК"
+							>
+								<img
+									src="images/Forge-Pro.webp"
+									alt="Мощный игровой ПК Titan Pro с жидкостным охлаждением и RGB-подсветкой"
+									loading="lazy"
+								/>
+							</div>
+							<div class="catalog-card__body">
+								<div class="catalog-card__top">
+									<h3>Titan Pro</h3>
+									<span>от 149 000 ₽</span>
+								</div>
+								<p>
+									Сбалансированный вариант для 2K-гейминга, стриминга и тяжёлых
+									проектов без перегрева и лишнего шума.
+								</p>
+								<ul>
+									<li>Core i7-14700F</li>
+									<li>RTX 4070 Super, 32 GB DDR5</li>
+									<li>2 TB NVMe SSD</li>
+								</ul>
+								<div class="review">
+									<strong>4.9</strong>
+									<span
+										>“Хороший баланс по шуму и температуре, в 2K всё идёт очень
+										уверенно.”</span
+									>
+								</div>
+								<a class="btn btn--primary catalog-card__btn" href="#contacts"
+									>Обсудить эту сборку</a
+								>
+							</div>
+						</article>
+
+						<article class="catalog-card">
+							<div
+								class="pc-preview pc-preview--c"
+								aria-label="Изображение рабочей станции"
+							>
+								<img
+									src="images/Forge-Studio.webp"
+									alt="Белая рабочая станция Titan Studio с мощной видеокартой и подсветкой"
+									loading="lazy"
+								/>
+							</div>
+							<div class="catalog-card__body">
+								<div class="catalog-card__top">
+									<h3>Titan Studio</h3>
+									<span>от 189 000 ₽</span>
+								</div>
+								<p>
+									Для монтажа, 3D, графики и тяжёлой многозадачности, где важны
+									быстрый рендер и стабильность под длительной нагрузкой.
+								</p>
+								<ul>
+									<li>Ryzen 9 7900</li>
+									<li>RTX 4080 Super, 64 GB DDR5</li>
+									<li>2 TB NVMe + HDD</li>
+								</ul>
+								<div class="review">
+									<strong>5.0</strong>
+									<span
+										>“Проекты открываются быстро, система держит долгую нагрузку
+										без скачков температуры.”</span
+									>
+								</div>
+								<a class="btn btn--ghost catalog-card__btn" href="#contacts"
+									>Подобрать рабочую станцию</a
+								>
+							</div>
+						</article>
+					</div>
+				</div>
+			</section>
+
+			<section class="section process" id="process">
+				<div class="container process__grid">
+					<header class="section-head section-head--left">
+						<span class="eyebrow">Процесс</span>
+						<h2>От подбора деталей до готового рабочего ПК</h2>
+						<p>
+							Каждый компьютер проходит кабель-менеджмент, настройку BIOS,
+							установку системы и стресс-тесты.
+						</p>
+					</header>
+
+					<ol class="steps" aria-label="Этапы сборки">
+						<li class="step">
+							<div class="step__icon" aria-hidden="true">
+								<svg viewBox="0 0 48 48" fill="none">
+									<rect x="9" y="12" width="30" height="20" rx="6"></rect>
+									<path d="M16 19h16M16 25h10"></path>
+									<path d="M24 32v4"></path>
+								</svg>
+							</div>
+							<div class="step__content">
+								<span class="step__eyebrow">01</span>
+								<h3 class="step__title">Подбор комплектующих</h3>
+								<p class="step__text">
+									Сравниваем варианты по цене, совместимости и реальной
+									производительности.
+								</p>
+							</div>
+						</li>
+						<li class="step">
+							<div class="step__icon" aria-hidden="true">
+								<svg viewBox="0 0 48 48" fill="none">
+									<path
+										d="M17 14h14l4 4v16a4 4 0 0 1-4 4H17a4 4 0 0 1-4-4V18a4 4 0 0 1 4-4Z"
+									></path>
+									<path d="M19 24h10M19 29h8"></path>
+									<path d="m31 14-1 5h5"></path>
+								</svg>
+							</div>
+							<div class="step__content">
+								<span class="step__eyebrow">02</span>
+								<h3 class="step__title">Аккуратная сборка</h3>
+								<p class="step__text">
+									Ставим корпус, материнскую плату, процессор, RAM, SSD,
+									видеокарту и охлаждение.
+								</p>
+							</div>
+						</li>
+						<li class="step">
+							<div class="step__icon" aria-hidden="true">
+								<svg viewBox="0 0 48 48" fill="none">
+									<path d="M14 30V18a4 4 0 0 1 4-4h12a4 4 0 0 1 4 4v12"></path>
+									<path d="M18 34h12"></path>
+									<path d="M22 22l2 2 5-5"></path>
+									<path d="M34 28h3M11 28h3"></path>
+								</svg>
+							</div>
+							<div class="step__content">
+								<span class="step__eyebrow">03</span>
+								<h3 class="step__title">Настройка и тесты</h3>
+								<p class="step__text">
+									Обновляем драйверы, настраиваем систему, проверяем температуру
+									и стабильность.
+								</p>
+							</div>
+						</li>
+						<li class="step">
+							<div class="step__icon" aria-hidden="true">
+								<svg viewBox="0 0 48 48" fill="none">
+									<path
+										d="M16 18h16a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H16a4 4 0 0 1-4-4V22a4 4 0 0 1 4-4Z"
+									></path>
+									<path d="M19 24h10"></path>
+									<path d="m24 14 4 4-4 4"></path>
+									<path d="M21 18h7"></path>
+								</svg>
+							</div>
+							<div class="step__content">
+								<span class="step__eyebrow">04</span>
+								<h3 class="step__title">Выдача и поддержка</h3>
+								<p class="step__text">
+									Объясняем, как пользоваться ПК, и остаёмся на связи после
+									передачи.
+								</p>
+							</div>
+						</li>
+					</ol>
+				</div>
+			</section>
+
+			<section class="section config" id="config">
+				<div class="container config__grid">
+					<div class="config__panel">
+						<span class="eyebrow">Мини-конфигуратор</span>
+						<h2>
+							Выберите сценарий, и мы покажем подходящую базовую конфигурацию
+						</h2>
+						<p>
+							Это ориентир по классу сборки. Финальную конфигурацию уточняем
+							после короткой консультации: по бюджету, задачам и пожеланиям к
+							корпусу, шуму и запасу на будущее.
+						</p>
+
+						<div class="chips" role="group" aria-label="Выбор типа сборки">
+							<button class="chip active" data-build="gaming">Игры</button>
+							<button class="chip" data-build="work">Работа</button>
+							<button class="chip" data-build="stream">Стриминг</button>
+						</div>
+					</div>
+
+					<div class="spec-card">
+						<div class="spec-card__head">
+							<h3 id="specTitle">Игровая сборка</h3>
+							<span id="specPrice">от 109 000 ₽</span>
+						</div>
+						<div class="spec-list" id="specList">
+							<div><span>CPU</span><strong>Ryzen 5 7500F</strong></div>
+							<div><span>GPU</span><strong>RTX 4060 8 GB</strong></div>
+							<div><span>RAM</span><strong>32 GB DDR5</strong></div>
+							<div><span>SSD</span><strong>1 TB NVMe</strong></div>
+						</div>
+						<a class="btn btn--primary spec-card__btn" href="#contacts"
+							>Оставить заявку</a
+						>
+					</div>
+				</div>
+			</section>
+
+			<section class="section why">
+				<div class="container">
+					<header class="section-head">
+						<span class="eyebrow">Почему мы</span>
+						<h2>Сборка без хаоса, перегрева и лишних трат</h2>
+					</header>
+
+					<ul class="features" aria-label="Преимущества работы">
+						<li class="feature">
+							<span class="feature__index">01</span>
+							<h3>Совместимость</h3>
+							<p>
+								Проверяем сокет, питание, размеры корпуса, охлаждение и BIOS.
+							</p>
+						</li>
+						<li class="feature">
+							<span class="feature__index">02</span>
+							<h3>Чистая сборка</h3>
+							<p>
+								Красивый кабель-менеджмент, правильный airflow и аккуратный
+								внешний вид.
+							</p>
+						</li>
+						<li class="feature">
+							<span class="feature__index">03</span>
+							<h3>Тестирование</h3>
+							<p>
+								Прогоняем нагрузку, смотрим температуры, шум и стабильность
+								системы.
+							</p>
+						</li>
+						<li class="feature">
+							<span class="feature__index">04</span>
+							<h3>Поддержка</h3>
+							<p>
+								Помогаем после выдачи: драйверы, апгрейд, настройки и
+								консультации.
+							</p>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<section class="section included">
+				<div class="container">
+					<header class="section-head">
+						<span class="eyebrow">Что входит</span>
+						<h2>
+							Вы получаете не просто комплектующие, а полностью готовый ПК
+						</h2>
+						<p>
+							Берём на себя весь путь: от подбора комплектующих до настройки
+							системы, тестов и рекомендаций по будущему апгрейду.
+						</p>
+					</header>
+
+					<div class="included-grid">
+						<article class="included-card included-card--wide">
+							<span>01</span>
+							<h3>Подбор комплектующих под ваши задачи</h3>
+							<p>
+								Собираем конфигурацию под конкретные игры, софт, разрешение
+								монитора, шумовой комфорт и желаемый бюджет.
+							</p>
+							<ul>
+								<li>Без слабых мест и несовместимых деталей</li>
+								<li>С учётом будущего апгрейда</li>
+								<li>С понятным объяснением, за что вы платите</li>
+							</ul>
+						</article>
+
+						<article class="included-card">
+							<span>02</span>
+							<h3>Аккуратная сборка и кабель-менеджмент</h3>
+							<p>
+								Ставим комплектующие, настраиваем airflow, прячем кабели и
+								собираем систему чисто как снаружи, так и внутри.
+							</p>
+						</article>
+
+						<article class="included-card">
+							<span>03</span>
+							<h3>Установка Windows, драйверов и базового софта</h3>
+							<p>
+								Готовим ПК к работе: обновляем систему, драйверы, настраиваем
+								BIOS и важные параметры стабильности.
+							</p>
+						</article>
+
+						<article class="included-card">
+							<span>04</span>
+							<h3>Стресс-тесты и контроль температур</h3>
+							<p>
+								Проверяем ПК под нагрузкой, чтобы вы получили не просто
+								красивую, а действительно стабильную сборку.
+							</p>
+						</article>
+
+						<article class="included-card">
+							<span>05</span>
+							<h3>Консультация после выдачи</h3>
+							<p>
+								Подсказываем по эксплуатации, апгрейду, периферии и настройкам,
+								если позже захотите усилить систему.
+							</p>
+						</article>
+					</div>
+				</div>
+			</section>
+
+			<section class="section cases">
+				<div class="container">
+					<header class="section-head">
+						<span class="eyebrow">Кейсы</span>
+						<h2>Примеры сборок под понятные задачи и реальный бюджет</h2>
+						<p>
+							Чтобы было проще сориентироваться, показываем не абстрактные
+							обещания, а сценарии, под которые мы обычно собираем ПК.
+						</p>
+					</header>
+
+					<div class="cases-grid">
+						<article class="case-card">
+							<div class="case-card__meta">
+								<span>Игры</span>
+								<strong>124 000 ₽</strong>
+							</div>
+							<h3>ПК для 2K-гейминга и высоких настроек</h3>
+							<p>
+								Нужна была тихая сборка для 2K-монитора, онлайн-шутеров и
+								сюжетных AAA-игр без перегрева летом.
+							</p>
+							<ul>
+								<li>Ryzen 5 7500F / RTX 4070</li>
+								<li>32 GB DDR5 и 1 TB NVMe</li>
+								<li>Упор на баланс FPS, шума и температуры</li>
+							</ul>
+							<div class="case-card__result">
+								<strong>Результат:</strong>
+								<span
+									>стабильный FPS, запас на новые игры и спокойный
+									апгрейд.</span
+								>
+							</div>
+						</article>
+
+						<article class="case-card case-card--accent">
+							<div class="case-card__meta">
+								<span>Работа / монтаж</span>
+								<strong>172 000 ₽</strong>
+							</div>
+							<h3>Станция для монтажа, графики и многозадачности</h3>
+							<p>
+								Собрали ПК для монтажа, графики и параллельной работы в Premiere
+								Pro, After Effects и Blender.
+							</p>
+							<ul>
+								<li>Core i7-14700F / RTX 4070 Super</li>
+								<li>64 GB RAM и 2 TB NVMe</li>
+								<li>Тихое охлаждение и быстрый рендер</li>
+							</ul>
+							<div class="case-card__result">
+								<strong>Результат:</strong>
+								<span
+									>ускорение рендера, плавная работа и минимальный шум.</span
+								>
+							</div>
+						</article>
+
+						<article class="case-card">
+							<div class="case-card__meta">
+								<span>Офис / дом</span>
+								<strong>79 000 ₽</strong>
+							</div>
+							<h3>Аккуратный ПК для учёбы, офиса и повседневных задач</h3>
+							<p>
+								Запрос был на быстрый домашний компьютер для учёбы, офиса,
+								браузера, таблиц и видеосвязи без переплаты за дискретную
+								графику.
+							</p>
+							<ul>
+								<li>Core i5-13400 / встроенная графика</li>
+								<li>16 GB RAM и 1 TB SSD</li>
+								<li>Минимум шума и простота обслуживания</li>
+							</ul>
+							<div class="case-card__result">
+								<strong>Результат:</strong>
+								<span
+									>быстрая повседневная машина с запасом на несколько лет.</span
+								>
+							</div>
+						</article>
+					</div>
+				</div>
+			</section>
+
+			<section class="section coverage">
+				<div class="container coverage__grid">
+					<header class="section-head section-head--left">
+						<span class="eyebrow">География / формат</span>
+						<h2>
+							Работаем по Казани, консультируем онлайн и отправляем в другие
+							города
+						</h2>
+						<p>
+							Можем вести проект полностью дистанционно, согласовывать сборку в
+							мессенджере и передать готовый ПК так, как вам удобнее.
+						</p>
+					</header>
+
+					<div class="coverage-cards">
+						<article class="coverage-card">
+							<h3>Как можно работать с нами</h3>
+							<ul class="coverage-points">
+								<li>Онлайн-подбор через Telegram, ВКонтакте или Instagram</li>
+								<li>Согласование конфигурации и бюджета поэтапно</li>
+								<li>Фото и видео процесса сборки по запросу</li>
+							</ul>
+						</article>
+
+						<article class="coverage-card">
+							<h3>Как получить готовый ПК</h3>
+							<ul class="coverage-points">
+								<li>Самовывоз в Казани по согласованию</li>
+								<li>Доставка по городу курьером</li>
+								<li>Отправка по России после тестов и надёжной упаковки</li>
+							</ul>
+						</article>
+
+						<article class="coverage-card coverage-card--note">
+							<strong>Важно</strong>
+							<p>
+								Если пока не уверены в конфигурации, достаточно написать задачи,
+								бюджет и монитор. Подготовим понятный вариант без лишних
+								комплектующих ради “красивой спецификации”.
+							</p>
+						</article>
+					</div>
+				</div>
+			</section>
+
+			<section class="section faq">
+				<div class="container">
+					<header class="section-head">
+						<span class="eyebrow">FAQ</span>
+						<h2>Ответы на частые вопросы перед заказом</h2>
+						<p>
+							Собрали базовые ответы заранее, чтобы вам было проще понять
+							процесс, сроки и формат работы.
+						</p>
+					</header>
+
+					<div class="faq-list">
+						<details class="faq-item">
+							<summary>
+								<span>Сколько занимает сборка компьютера?</span>
+								<span class="faq-toggle" aria-hidden="true"></span>
+							</summary>
+							<p>
+								Обычно подбор, сборка и тестирование занимают от 2 до 4 дней.
+								Если все комплектующие в наличии и проект без редких позиций,
+								можем собрать быстрее.
+							</p>
+						</details>
+
+						<details class="faq-item">
+							<summary>
+								<span>Можно ли собрать ПК строго под мой бюджет?</span>
+								<span class="faq-toggle" aria-hidden="true"></span>
+							</summary>
+							<p>
+								Да. Мы всегда собираем от бюджета и задач, а не “вверх до
+								потолка”. Если можно сэкономить без потери комфорта в работе или
+								играх, сразу это показываем.
+							</p>
+						</details>
+
+						<details class="faq-item">
+							<summary>
+								<span>Можно ли использовать мои комплектующие?</span>
+								<span class="faq-toggle" aria-hidden="true"></span>
+							</summary>
+							<p>
+								Да, если они технически совместимы и не ограничивают систему по
+								питанию, охлаждению или производительности. Перед сборкой
+								обязательно всё проверяем и честно предупреждаем о рисках.
+							</p>
+						</details>
+
+						<details class="faq-item">
+							<summary>
+								<span>Проверяете ли вы температуры и стабильность?</span>
+								<span class="faq-toggle" aria-hidden="true"></span>
+							</summary>
+							<p>
+								Да. Перед выдачей прогоняем систему под нагрузкой, смотрим
+								температуры, шум, работу охлаждения и общее поведение ПК.
+							</p>
+						</details>
+
+						<details class="faq-item">
+							<summary>
+								<span>Что будет после покупки, если понадобится помощь?</span>
+								<span class="faq-toggle" aria-hidden="true"></span>
+							</summary>
+							<p>
+								После выдачи можно написать по настройкам, апгрейду, драйверам и
+								базовым вопросам по эксплуатации. Не исчезаем сразу после оплаты
+								и передачи компьютера.
+							</p>
+						</details>
+					</div>
+				</div>
+			</section>
+
+			<section class="section trust-strip">
+				<div class="container">
+					<div class="trust-strip__inner">
+						<div class="trust-strip__content">
+							<span class="eyebrow">Перед заявкой</span>
+							<h2>
+								Поможем выбрать конфигурацию без перегруза терминами и лишними
+								тратами
+							</h2>
+							<p>
+								Не обязательно заранее разбираться в процессорах, чипсетах и
+								видеокартах. Напишите задачи, бюджет и пожелания по корпусу, а
+								мы объясним всё простым языком и предложим адекватные варианты.
+							</p>
+						</div>
+
+						<ul class="trust-metrics" aria-label="Показатели сервиса">
+							<li class="trust-point">
+								<strong>15-30 мин</strong>
+								<span>обычное время первого ответа в рабочие часы</span>
+							</li>
+							<li class="trust-point">
+								<strong>2 варианта</strong>
+								<span
+									>обычно готовим для сравнения по бюджету и запасу на
+									будущее</span
+								>
+							</li>
+							<li class="trust-point">
+								<strong>Перед выдачей</strong>
+								<span
+									>проверяем систему под нагрузкой и объясняем, что и как
+									настроено</span
+								>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<section class="section contact" id="contacts">
+				<div class="container contact__grid">
+					<div class="contact__content">
+						<span class="eyebrow">Заявка</span>
+						<h2>Опишите задачу, бюджет и пожелания по сборке</h2>
+						<p>
+							Чем точнее опишете задачи, тем быстрее подготовим адекватную
+							конфигурацию. Можно просто написать игры, программы, бюджет и
+							предпочтения по корпусу.
+						</p>
+					</div>
+
+					<form class="form" novalidate>
+						<label class="form__field" for="contact-name">
+							<span class="form__label">Ваше имя</span>
+							<input
+								class="form__input"
+								type="text"
+								id="contact-name"
+								name="name"
+								placeholder="Как к вам обращаться"
+								required
+							/>
+						</label>
+						<label class="form__field" for="contact-channel">
+							<span class="form__label">Контакт</span>
+							<input
+								class="form__input"
+								type="text"
+								id="contact-channel"
+								name="contact"
+								placeholder="Телефон, Telegram или email"
+								required
+							/>
+						</label>
+						<label class="form__field" for="contact-task">
+							<span class="form__label">Задача</span>
+							<textarea
+								class="form__textarea"
+								id="contact-task"
+								name="task"
+								placeholder="Например: нужен ПК для 2K-гейминга и монтажа, бюджет до 160 000 ₽, без RGB"
+								required
+							></textarea>
+						</label>
+						<div class="form__feedback" aria-live="polite"></div>
+						<button class="btn btn--primary form__submit" type="submit">
+							Отправить заявку
+						</button>
+						<p class="form__note">
+							Никаких рассылок. Контакт нужен только для связи по сборке.
+						</p>
+					</form>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<div class="container footer__inner">
+				<div class="footer__brand">
+					<div class="logo">
+						<a class="logo__icon-link" href="#top" aria-label="Titan">
+							<img class="logo__mark" src="icons/favicon.svg" alt="" />
+						</a>
+						<span class="logo__text">Titan</span>
+					</div>
+					<p>
+						Собираем и настраиваем ПК в Казани под игры, работу, монтаж и
+						повседневные задачи. Помогаем от подбора комплектующих до выдачи
+						готовой системы.
+					</p>
+					<ul class="footer__social-icons" aria-label="Соцсети">
+						<li class="footer__social-item">
+							<a
+								class="footer__social-link"
+								href="https://t.me/arcode_dev"
+								aria-label="Telegram"
+								target="_blank"
+								rel="noreferrer"
+							>
+								<svg aria-hidden="true">
+									<use href="icons/social-sprite.svg#icon-telegram"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="footer__social-item">
+							<a class="footer__social-link" href="#top" aria-label="ВКонтакте">
+								<svg aria-hidden="true">
+									<use href="icons/social-sprite.svg#icon-vk"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="footer__social-item">
+							<a class="footer__social-link" href="#top" aria-label="Instagram">
+								<svg aria-hidden="true">
+									<use href="icons/social-sprite.svg#icon-instagram"></use>
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="footer__group">
+					<span class="footer__title">Контакты</span>
+					<address class="footer__links footer__contacts">
+						<span class="footer__contact-item">г. Казань</span>
+						<span class="footer__contact-item">Ежедневно, 10:00-21:00</span>
+						<a class="footer__contact-link" href="#">+7 (999) 999-99-99</a>
+						<a class="footer__contact-link" href="#">hello@example.ru</a>
+					</address>
+				</div>
+			</div>
+			<div class="container footer__bottom">
+				<p>© 2026 Concept Design & Development — ArCode</p>
+			</div>
+		</footer>
+
+		<a
+			class="scroll-top"
+			href="https://arcode-dev.ru/"
+			target="_blank"
+			rel="noopener noreferrer"
+			aria-label="Запросить похожий проект"
+		>
+			<span>Хочу такой же сайт</span>
+		</a>
+		<div class="site-bg" aria-hidden="true"></div>
+	</body>
+</html>

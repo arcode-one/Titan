@@ -1,0 +1,47 @@
+.scroll-top {
+  position: fixed;
+  right: 24px;
+  bottom: 86px;
+  --scroll-top-shift-x: 0px;
+  --scroll-top-shift-y: 16px;
+  z-index: 45;
+  display: grid;
+  width: max-content;
+  max-width: calc(100vw - 48px);
+  min-width: 78px;
+  height: 58px;
+  padding: 0 16px;
+  place-items: center;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: var(--control-bg);
+  box-shadow: 0 18px 60px var(--soft-shadow);
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(var(--scroll-top-shift-x), var(--scroll-top-shift-y));
+  transition: opacity .25s ease, transform .25s ease, background .25s ease;
+  backdrop-filter: blur(16px);
+  text-decoration: none;
+}
+
+.scroll-top.is-visible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(var(--scroll-top-shift-x), 0);
+}
+
+.scroll-top:hover {
+  transform: translate(var(--scroll-top-shift-x), -3px);
+}
+
+.scroll-top span {
+  display: block;
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: .08em;
+  line-height: 1.15;
+  text-align: center;
+  text-transform: uppercase;
+}

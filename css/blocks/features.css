@@ -1,0 +1,34 @@
+.features {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.feature {
+  padding: 24px;
+  transition: transform .3s ease, border-color .3s ease, box-shadow .3s ease, background .3s ease;
+}
+
+.feature__index {
+  color: var(--accent);
+  font-weight: 900;
+  transition: letter-spacing .3s ease, transform .3s ease;
+}
+
+.feature h3 {
+  margin: 24px 0 10px;
+}
+
+.feature:hover {
+  border-color: rgba(99,166,255,.32);
+  background: linear-gradient(180deg, rgba(99,166,255,.1), var(--card));
+  box-shadow: 0 28px 70px rgba(7, 22, 54, .22);
+}
+
+.feature:hover .feature__index {
+  letter-spacing: .12em;
+  transform: translateY(-1px);
+}
